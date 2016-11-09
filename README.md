@@ -1,6 +1,6 @@
 # svg-balance
 <h2>A javascript library to render a balance diagram in SVG based on the provided data</h2>
-![SVG Balance](/sample.png){:height="300px" width="300px"}
+<img src="sample.png" alt="" width=300px >
 <h1>How to use?</h3>
 <h4>Setup dependencies</h4>
 <h5>Include the javascript libraries d3.min.js and balance.js in the html page</h5>
