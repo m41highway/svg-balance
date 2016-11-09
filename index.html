@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="d3.min.js"></script>
+    <script type="text/javascript" src="balance.js"></script>
+</head>
+
+<body>
+    <script>
+        
+        // Input data
+        var arraySide1 = [0, 1, 1, 1, 0, 1 ,0]
+        var arrayLabel1 = ["Advice", "Waiting Time", "Service", "Explanation", "Atmosphere", "Welcome", "Farewell"]
+        Balance.addBoxes(arraySide1, arrayLabel1);
+
+
+        // Customize the chart
+        /*
+        Balance.setSvgSize(700, 700)
+            .setBg("cyan")
+            .setPivotColor("red")
+            .setPivotLineColor("blue")            
+            .setLevelColor("black")
+            .setInclination("15")
+            .setWordColor(
+                [  
+                    {"label": "Advice", "color": "orange"},
+                    {"label": "Waiting Time", "color": "green"},
+                    {"label": "Service", "color": "yellow"},
+                    {"label": "Explanation", "color": "brown"},
+                    {"label": "Atmosphere", "color": "purple"},
+                    {"label": "Welcome", "color": "pink"},
+                    {"label": "Farewell", "color": "pink"}            
+                ]
+            );
+            */
+
+
+        /**
+        * kick off
+        */                    
+        Balance.visualize();
+
+    </script>        
+</body>
+</html> 
