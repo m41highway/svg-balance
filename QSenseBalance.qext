@@ -1,0 +1,14 @@
+{
+	"name" : "QSense Balance",
+	"description" : "QSense dual balance",
+	"icon" : "gauge-balance",
+	"type" : "visualization",
+	"version": "1.0.0",
+	"author": "ang@palo-it.com",
+	"homepage" : "http://www.palo-it.com/",
+	"keywords" : "qlik-sense, visualization",
+    "preview" : "qsense_balance.png",
+	"license" : "",
+	"repository" : "",
+    "dependencies" : { "qlik-sense" : ">=2.2.x" }
+}

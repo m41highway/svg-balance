@@ -353,6 +353,25 @@
             this.displayAverage(svgContainer, boxes);
 
         }
+
+        /**
+         * The is for QSense integration
+         */
+        Balance.render = function (svgContainer) {
+            this.drawPivot(svgContainer);
+
+            var group = this.createGroup(svgContainer, this.setAngle(boxes) );
+
+            this.drawLevel(group);
+
+            this.drawBoxes(group);
+
+            this.drawLabels(group);
+
+            this.displayAverage(svgContainer, boxes);
+        }
+
+
         return Balance;
     }
 
