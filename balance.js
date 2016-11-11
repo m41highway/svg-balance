@@ -194,6 +194,17 @@
         }
 
         /**
+         * return a svgContainer for Qlink
+         */
+        Balance.createContainerForQlik = function (parent) {            
+            return ( parent.append("svg")
+                .attr("width", W)
+                .attr("height", H)
+                .style("background-color",backgroundColor)
+            )            
+        }
+
+        /**
          * Draw the pivot
          */
         Balance.drawPivot = function (svgContainer) {
@@ -357,7 +368,10 @@
         /**
          * The is for QSense integration
          */
-        Balance.render = function (svgContainer) {
+        Balance.render = function (parent) {
+
+            var svgContainer = this.createContainerForQlik(parent);
+
             this.drawPivot(svgContainer);
 
             var group = this.createGroup(svgContainer, this.setAngle(boxes) );
